@@ -1,31 +1,54 @@
 {
   "name": "pedro-with-me",
-  "displayName": "Pedro le Chat",
-  "description": "Un petit chat qui vous accompagne pendant que vous codez",
+  "displayName": "Pedro the Cat",
+  "description": "A cute companion for your coding sessions - A pixel art cat that lives in your editor",
   "version": "0.0.1",
+  "publisher": "corolanvirus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/corolanvirus/pedro-with-me"
+  },
+  "icon": "resources/icon.png",
   "engines": {
     "vscode": "^1.87.0"
   },
   "categories": [
-    "Other"
+    "Other",
+    "Themes",
+    "Visualization"
+  ],
+  "keywords": [
+    "cat",
+    "pet",
+    "companion",
+    "pixel art",
+    "animation"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
         "command": "pedro-with-me.showCat",
-        "title": "Afficher Pedro le Chat"
+        "title": "Show Pedro the Cat"
       }
     ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./"
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
   },
   "devDependencies": {
     "@types/vscode": "^1.87.0",
     "@types/node": "18.x",
-    "typescript": "^5.3.3"
-  }
+    "typescript": "^5.3.3",
+    "@vscode/vsce": "^2.24.0"
+  },
+  "author": {
+    "name": "corolanvirus",
+    "url": "https://github.com/corolanvirus"
+  },
+  "license": "MIT"
 }
