@@ -2,7 +2,7 @@
   "name": "pedro-with-me",
   "displayName": "Pedro the Cat",
   "description": "A cute companion for your coding sessions - A pixel art cat that lives in your editor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "corolanvirus",
   "repository": {
     "type": "git",
